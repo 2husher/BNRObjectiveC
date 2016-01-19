@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>BC53C01D-3E53-4894-BA5F-7456D23D0BFE</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>TimeAfterTime</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>D6DB0FA422AFD950CA631BFC5D278582615383E1</key>
 		<string>https://github.com/2husher/BNRObjectiveC.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TimeAfterTime/TimeAfterTime.xcodeproj/project.xcworkspace</string>
+	<string>TimeAfterTime/TimeAfterTime.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D6DB0FA422AFD950CA631BFC5D278582615383E1</key>
