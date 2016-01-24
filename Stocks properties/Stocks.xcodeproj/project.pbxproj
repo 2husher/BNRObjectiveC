@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		178ABFF21C556A2E00478B3E /* BNRPortfolio.m in Sources */ = {isa = PBXBuildFile; fileRef = 178ABFF11C556A2E00478B3E /* BNRPortfolio.m */; };
 		17D2607D1C4FE45B00CCCE91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D2607C1C4FE45B00CCCE91 /* main.m */; };
 		17D260851C4FE47500CCCE91 /* BNRStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D260841C4FE47500CCCE91 /* BNRStockHolding.m */; };
 		17E5532B1C54C8E4003370F8 /* BNRForeignStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E5532A1C54C8E4003370F8 /* BNRForeignStockHolding.m */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		178ABFF01C556A2E00478B3E /* BNRPortfolio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRPortfolio.h; sourceTree = "<group>"; };
+		178ABFF11C556A2E00478B3E /* BNRPortfolio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRPortfolio.m; sourceTree = "<group>"; };
 		17D260791C4FE45B00CCCE91 /* Stocks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Stocks; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D2607C1C4FE45B00CCCE91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17D260831C4FE47500CCCE91 /* BNRStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRStockHolding.h; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 				17D260841C4FE47500CCCE91 /* BNRStockHolding.m */,
 				17E553291C54C8E4003370F8 /* BNRForeignStockHolding.h */,
 				17E5532A1C54C8E4003370F8 /* BNRForeignStockHolding.m */,
+				178ABFF01C556A2E00478B3E /* BNRPortfolio.h */,
+				178ABFF11C556A2E00478B3E /* BNRPortfolio.m */,
 			);
 			path = Stocks;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E5532B1C54C8E4003370F8 /* BNRForeignStockHolding.m in Sources */,
+				178ABFF21C556A2E00478B3E /* BNRPortfolio.m in Sources */,
 				17D2607D1C4FE45B00CCCE91 /* main.m in Sources */,
 				17D260851C4FE47500CCCE91 /* BNRStockHolding.m in Sources */,
 			);
