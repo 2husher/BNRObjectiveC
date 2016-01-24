@@ -8,27 +8,43 @@
 
 #import <Foundation/Foundation.h>
 #import "BNREmployee.h"
+#import "BNRAsset.h"
 
 int main(int argc, const char * argv[])
 {
     @autoreleasepool
     {
-        BNREmployee *mikey = [[BNREmployee alloc] init];
+        NSMutableArray *employees = [[NSMutableArray alloc] init];
 
-        mikey.heightInMeters = 1.8;
-        mikey.weightInKilos = 70;
-        mikey.employeeID = 12;
-        mikey.hireDate = [NSDate dateWithTimeIntervalSinceReferenceDate:1000000];
+        for (int i = 0; i < 10; i++) {
+            BNREmployee *mikey = [[BNREmployee alloc] init];
 
-        int weight = mikey.weightInKilos;
-        float height = mikey.heightInMeters;
+            mikey.heightInMeters = 1.8 - i/10.0;
+            mikey.weightInKilos = 90 + i;
+            mikey.employeeID = i;
 
-        NSLog(@"Mikey's weight is %i kg and his height is %0.2f m", weight, height);
-        NSLog(@"%@ hired on %@", mikey, mikey.hireDate);
+            [employees addObject:mikey];
+        }
 
-        float bmi = [mikey bodyMassIndex];
-        double years = [mikey yearsOfEmployment];
-        NSLog(@"Body mass index is %f, works for %.2f years", bmi, years);
+        for (int i = 0; i < 10; i++) {
+            BNRAsset *asset = [[BNRAsset alloc] init];
+
+            asset.label = [NSString stringWithFormat:@"Laptop %d", i];
+            asset.resaleValue = 350 + i * 17;
+
+            NSUInteger randIdx = random() % [employees count];
+            BNREmployee *employee = employees[randIdx];
+            [employee addAsset:asset];
+        }
+
+        NSLog(@"Employees %@", employees);
+
+        NSLog(@"Giving up ownership of one employee");
+        [employees removeObjectAtIndex:5];
+
+        NSLog(@"Giving up ownership of array");
+        employees = nil;
+
     }
     return 0;
 }
