@@ -26,6 +26,11 @@ int main(int argc, const char * argv[])
             [employees addObject:mikey];
         }
 
+        BNRAsset *assetZero = [[BNRAsset alloc] init];
+        assetZero.label = [NSString stringWithFormat:@"Laptop %d", 22];
+        assetZero.resaleValue = 200;
+        [employees[5] addAsset:assetZero];
+
         for (int i = 0; i < 10; i++) {
             BNRAsset *asset = [[BNRAsset alloc] init];
 
@@ -38,6 +43,10 @@ int main(int argc, const char * argv[])
         }
 
         NSLog(@"Employees %@", employees);
+
+        NSLog(@"Employee 6's assets %@ before removing", [employees[5] assets]);
+        [employees[5] removeAsset:assetZero];
+        NSLog(@"Employee 6's assets %@ after removing", [employees[5] assets]);
 
         NSLog(@"Giving up ownership of one employee");
         [employees removeObjectAtIndex:5];

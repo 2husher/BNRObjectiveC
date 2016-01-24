@@ -33,6 +33,11 @@
     [_assets addObject:a];
 }
 
+- (void)removeAsset:(BNRAsset *)a
+{
+    [_assets removeObject:a];
+}
+
 - (unsigned int)valueOfAssets
 {
     __block unsigned int sum = 0;
